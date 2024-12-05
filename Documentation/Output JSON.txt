@@ -1,0 +1,82 @@
+PS C:\Users\OJUS> curl -X POST -F "file=@D:\Projects\Object Detection Project\Documentation\face.png" http://localhost:8000/process-image
+{
+	"detections": [
+		{
+			"xmin": 22.059345245361328,
+			"ymin": 42.15114212036133,
+			"xmax": 587.4630126953125,
+			"ymax": 637.146240234375,
+			"confidence": 0.6671578884124756,
+			"class": 0,
+			"name": "person"
+		},
+		{
+			"xmin": 1.6424793004989624,
+			"ymin": 6.401325225830078,
+			"xmax": 224.00677490234375,
+			"ymax": 249.44935607910156,
+			"confidence": 0.3617035150527954,
+			"class": 0,
+			"name": "person"
+		},
+		{
+			"xmin": 0.5298107862472534,
+			"ymin": 391.43115234375,
+			"xmax": 104.9977798461914,
+			"ymax": 640.9586181640625,
+			"confidence": 0.3285806477069855,
+			"class": 40,
+			"name": "wine glass"
+		},
+		{
+			"xmin": 463.9693298339844,
+			"ymin": 606.45947265625,
+			"xmax": 544.5576782226563,
+			"ymax": 645.0,
+			"confidence": 0.2667562961578369,
+			"class": 65,
+			"name": "remote"
+		}
+	]
+}
+PS C:\Users\OJUS> curl -X POST -F "file=@D:\Projects\Object Detection Project\Documentation\face.png" http://localhost:8080/upload
+{
+	"detections": [
+		{
+			"xmin": 22.059345245361328,
+			"ymin": 42.15114212036133,
+			"xmax": 587.4630126953125,
+			"ymax": 637.146240234375,
+			"confidence": 0.6671578884124756,
+			"class": 0,
+			"name": "person"
+		},
+		{
+			"xmin": 1.6424793004989624,
+			"ymin": 6.401325225830078,
+			"xmax": 224.00677490234375,
+			"ymax": 249.44935607910156,
+			"confidence": 0.3617035150527954,
+			"class": 0,
+			"name": "person"
+		},
+		{
+			"xmin": 0.5298107862472534,
+			"ymin": 391.43115234375,
+			"xmax": 104.9977798461914,
+			"ymax": 640.9586181640625,
+			"confidence": 0.3285806477069855,
+			"class": 40,
+			"name": "wine glass"
+		},
+		{
+			"xmin": 463.9693298339844,
+			"ymin": 606.45947265625,
+			"xmax": 544.5576782226563,
+			"ymax": 645.0,
+			"confidence": 0.2667562961578369,
+			"class": 65,
+			"name": "remote"
+		}
+	]
+}

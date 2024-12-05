@@ -1,0 +1,47 @@
+A) Problem Statement :-
+
+Develop microservice consisting of two main components: a UI backend service and an AI backend service.The UI end takes the image input from the user. The AI backend utilizes a lightweight open-source model to perform object detection and returns the results in a structured JSON format. The two components communicate seamlessly to provide a comprehensive solution to the user.
+
+
+B) Approach :-
+
+To develop this microservice architecture, we’ll create two distinct services:
+1) UI Backend Service: Handles user interactions, accepts image input, and forwards it to the AI backend service for processing.
+2) AI Backend Service: Processes the image using an open-source object detection model and returns the detection results in JSON format.
+
+1) UI Backend Service :
+
+	Functionality:
+		Accept image input from the user.
+		Send the image to the AI backend via a REST API call.
+		Display results received from the AI backend.
+
+	Technology Stack: FastAPI, REST API
+	
+	Endpoints:
+		Upload Image:
+		Method: POST
+		Endpoint: /upload
+		Request: Image (multipart/form-data)
+		Response: JSON with object detection results.
+
+2) AI Backend Service
+	
+	Functionality:
+		Accepts image input via REST API.
+		Performs object detection using an open-source model.
+		Returns structured JSON with detection details.
+		
+	Technology Stack: FastAPI, YOLOv5, PyTorch
+	
+	Endpoints:
+		Process Image:
+		Method: POST
+		Endpoint: /process-image
+		Request: Image (multipart/form-data)
+		Response: JSON with detected objects
+
+		
+C) Communication Between Services :-
+
+The UI Backend calls the AI Backend using a REST API over HTTP.
