@@ -1,8 +1,6 @@
 # Object-Detection-Project
-
 ##
 # **Problem Statement**
-
 Develop microservice consisting of two main components: a UI backend service and an AI backend service.
 The UI end takes the image input from the user. The AI backend utilizes a lightweight open-source model to perform object detection and returns the results in a structured JSON format. 
 The two components communicate seamlessly to provide a comprehensive solution to the user.
